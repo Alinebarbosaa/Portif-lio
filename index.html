@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
                 <h1>Olá, eu sou <span>Aline Barbosa</span>.</h1>
                 <p>Sou uma desenvolvedora em constante aprendizado, Apaixonada por tecnologia e pelas infinitas possibilidade que a programação oferece.
                 </p>
-                <a class="botao">Ver projetos</a>
+                <a class="botao efeito-cursor">Ver projetos</a>
             </div>         
         </section>
 
@@ -42,9 +42,10 @@
                     <div class="info-projeto">
                         <h3>Wacth-shop</h3>
                         <p> O smartwatch mais avançado do mercado. Monitoramento completo de saúde, GPS integrado, tela
-                    AMOLED de alta resolução e bateria de longa duração. Perfeito para acompanhar seu estilo de vida
+                    AMOLED de alta resolução e bateria de longa duração. Perfeito para acompanhar seu estilo de vida 
                     ativo.</p>
                         <a>https://story-aline.netlify.app/</a>
+            
                     </div>
                 </div>
 
@@ -96,32 +97,45 @@
         </section>
 
         <section class="secao">
-            <h2 class="titulo-secao">contatos</h2>
+            <h2 class="titulo-secao">Contatos</h2>
 
-               <div class="botoes-contatoo">
-                 <a href="https://api.whatsapp.com/send/?phone=5531999972103&text=Oi%2C+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" class="botao-contato whatsapp">
+               <div class="botoes-contato">
+                 <a href="https://api.whatsapp.com/send/?phone=5531999972103&text=Oi%2C+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" class="botao-contato whatsapp efeito-cursor">
                 <span>whatsApp</span>
                 </a>
 
-                <a href="mailto:alineemille4@gmail.com"class="botao-contato email">
+                <a href="mailto:alineemille4@gmail.com"class="botao-contato email efeito-cursor">
                 <span>Email</span>
                 </a>
 
-                 <a href="https://www.linkedin.com/in/aline-barbosa-a173a2194/" class="botao-contato linkedin">
+                 <a href="https://www.linkedin.com/in/aline-barbosa-a173a2194/" class="botao-contato linkedin efeito-cursor">
                 <span>linkedin</span>
                 </a>
 
-                 <a href="https://github.com/Alinebarbosaa" class="botao-contato github">
+                 <a href="https://github.com/Alinebarbosaa" class="botao-contato github efeito-cursor">
                 <span>Github</span>
                  </a>
             </div>
- 
+
+
         </section>
 
         <footer>
             <p>Feito com 💜 por Aline Barbosa</p>
         </footer>
 
-        
+        <div class="cursor"></div>
+
+
 </body>
+<script>
+    const cursor = document.querySelector('.cursor')
+
+    document.addEventListener('mousemove', function(info){
+        cursor.style.left = info.clientX + 'px'
+        cursor.style.top = info.clientY + 'px'
+    })
+
+
+</script>
 </html>

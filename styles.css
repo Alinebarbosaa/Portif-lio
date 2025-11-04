@@ -158,7 +158,6 @@ ul {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    align-items: center;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -171,4 +170,74 @@ ul {
     border-radius: 10px;
     font-weight: 500;
     min-width: 160px;
+    color: white;
 }
+
+.whatsapp { background-color: #25D366; }
+
+.email { background-color: #EA4335; }
+
+.linkedin { background-color:  #0077B5;}
+
+.github { background-color: #333; }
+
+footer {
+    padding: 20px 5%;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.efeito-cursor {
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+.efeito-cursor:hover {
+     transform: translateY(-10px);
+}
+
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(77, 124, 254, 0.5);
+    z-index: 99;
+    transform: translate(-50% -50%); 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    ul {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .principal h1 {
+        font-size: 50px;
+
+    }
+   
+    .secao {
+        padding: 60px 20px;
+      }
+
+    .sobre {
+        grid-template-columns: 1fr;
+
+     }
+
+    .img-sobre {
+        height: auto;
+    }
+    }
