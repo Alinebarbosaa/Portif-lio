@@ -10,7 +10,7 @@ body {
 }
 
 .secao {
-    padding: 100px 0;
+    padding: 10px;
     padding-left: 50px;
 }
 
@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     margin-left: 50px;
   
 }
@@ -240,4 +240,18 @@ img {
     .img-sobre {
         height: auto;
     }
+
+    a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
     }
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    }
+
+    
