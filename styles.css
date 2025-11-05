@@ -33,7 +33,7 @@ ul {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    min-height: 85vh;
+    min-height: 50vh;
 }
 
 .principal h1 {
@@ -45,6 +45,7 @@ ul {
 
 .principal h1 span {
     color: #4d7cfe;
+    height: 50px;
 }
 .principal p {
     font-size: 20px;
