@@ -94,7 +94,9 @@ ul {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin: 10px 0;
+    
 }
 
 .info-projeto {
@@ -214,7 +216,7 @@ img {
 }
 
 @media (max-width: 768px) {
-
+    .topo
     header {
         padding: 20px;
     }
